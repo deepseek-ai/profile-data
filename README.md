@@ -9,7 +9,7 @@ Here, we publicly share profiling data from our training and inference framework
 ![train](assets/train.jpg)
 
 The training profile data demonstrates our overlapping strategy for a pair of individual forward and backward chunks in [DualPipe](https://github.com/deepseek-ai/dualpipe). Each chunk contains 4 MoE (Mixture of Experts) layers.
-The parallel configuration aligns with DeepSeek-V3 pretraining settings: EP64, TP1 with 4K sequence length. And the PP communication is not included during profilng for simplicity.
+The parallel configuration aligns with DeepSeek-V3 pretraining settings: EP64, TP1 with 4K sequence length. And the PP communication is not included during profiling for simplicity.
 
 ## Inference
 
